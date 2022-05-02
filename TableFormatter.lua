@@ -82,7 +82,7 @@ local function format_value(v)
     elseif typ == 'string' then
         return '"'..v..'"'
     elseif typ == 'Instance' then
-        return v.GetFullName(v)
+        return getgenv().GetPath(v)
     elseif typ == "EnumItem" then 
         return tostring(v)
     else

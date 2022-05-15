@@ -1,4 +1,3 @@
--- just a back up for the linoria library so I can make changes to it
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
 local TweenService = game:GetService('TweenService');

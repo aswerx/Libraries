@@ -7,11 +7,6 @@ local RenderStepped = game:GetService('RunService').RenderStepped;
 local LocalPlayer = game:GetService('Players').LocalPlayer;
 local Mouse = LocalPlayer:GetMouse();
 
-getgenv().UpdateFile = function()
-    print("fired from:", debug.traceback())
-    writefile(string.format("%s/%s/Settings.lua", "UniversalSilentAim", tostring(game.PlaceId)), HttpService:JSONEncode(getgenv().SilentAimSettings or {}));
-end
-
 local ScreenGui = Instance.new('ScreenGui');
 (protectgui or syn.protect_gui or (function() end))(ScreenGui);
 
@@ -479,8 +474,6 @@ do
 
         function ColorPicker:OnChanged(Func)
             ColorPicker.Changed = Func;
-            
-            getgenv().UpdateFile()
             Func();
         end;
 
@@ -1087,8 +1080,6 @@ do
 
         function Textbox:OnChanged(Func)
             Textbox.Changed = Func;
-            
-            getgenv().UpdateFile()
             Func();
         end;
 
@@ -1178,8 +1169,6 @@ do
 
         function Toggle:OnChanged(Func)
             Toggle.Changed = Func;
-            
-            getgenv().UpdateFile()
             Func();
         end;
 
@@ -1328,8 +1317,6 @@ do
 
         function Slider:OnChanged(Func)
             Slider.Changed = Func;
-            
-            getgenv().UpdateFile()
             Func();
         end;
 

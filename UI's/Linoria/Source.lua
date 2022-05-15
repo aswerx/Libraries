@@ -473,6 +473,7 @@ do
 
         function ColorPicker:OnChanged(Func)
             ColorPicker.Changed = Func;
+            getgenv().UpdateFile()
             Func();
         end;
 
@@ -1079,6 +1080,7 @@ do
 
         function Textbox:OnChanged(Func)
             Textbox.Changed = Func;
+            getgenv().UpdateFile()
             Func();
         end;
 
@@ -1168,6 +1170,7 @@ do
 
         function Toggle:OnChanged(Func)
             Toggle.Changed = Func;
+            getgenv().UpdateFile()
             Func();
         end;
 
@@ -1316,6 +1319,7 @@ do
 
         function Slider:OnChanged(Func)
             Slider.Changed = Func;
+            getgenv().UpdateFile()
             Func();
         end;
 

@@ -1,10 +1,16 @@
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
 local TweenService = game:GetService('TweenService');
+local HttpService = game:GetService("HttpService");
 local CoreGui = game:GetService('CoreGui');
 local RenderStepped = game:GetService('RunService').RenderStepped;
 local LocalPlayer = game:GetService('Players').LocalPlayer;
 local Mouse = LocalPlayer:GetMouse();
+
+getgenv().UpdateFile = function()
+    print("fired from:", debug.traceback())
+    writefile(string.format("%s/%s/Settings.lua", "UniversalSilentAim", tostring(game.PlaceId)), HttpService:JSONEncode(getgenv().SilentAimSettings or {}));
+end
 
 local ScreenGui = Instance.new('ScreenGui');
 (protectgui or syn.protect_gui or (function() end))(ScreenGui);

@@ -90,7 +90,7 @@ local ThemeManager = {} do
 		table.sort(ThemesArray, function(a, b) return self.BuiltInThemes[a][1] < self.BuiltInThemes[b][1] end)
 
 		groupbox:AddDivider()
-		groupbox:AddDropdown('ThemeManager_ThemeList', { Text = 'Theme list', Values = ThemesArray, Default = 1 })
+		groupbox:AddDropdown('ThemeManager_ThemeList', { Text = 'theme list', Values = ThemesArray, Default = 1 })
 
 		groupbox:AddButton('set as default', function()
 			self:SaveDefault(Options.ThemeManager_ThemeList.Value)
@@ -233,7 +233,8 @@ local ThemeManager = {} do
 
 	function ThemeManager:CreateGroupBox(tab)
 		assert(self.Library, 'must set ThemeManager.Library first!')
-		return tab:AddLeftGroupbox('Themes')
+		tab:AddLeftGroupbox('themes')
+		tab:AddDivider()
 	end
 
 	function ThemeManager:ApplyToTab(tab)

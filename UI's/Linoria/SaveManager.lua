@@ -229,14 +229,14 @@ local SaveManager = {} do
 			self.Library:Notify(string.format('overwrote config %q', name))
 		end)
 		
-		section:AddButton('Autoload config', function()
+		section:AddButton('autoload config', function()
 			local name = Options.SaveManager_ConfigList.Value
 			writefile(self.Folder .. '/settings/autoload.txt', name)
 			SaveManager.AutoloadLabel:SetText('current autoload config: ' .. name)
 			self.Library:Notify(string.format('set %q to auto load', name))
 		end)
 
-		section:AddButton('Refresh config list', function()
+		section:AddButton('refresh config list', function()
 			Options.SaveManager_ConfigList.Values = self:RefreshConfigList()
 			Options.SaveManager_ConfigList:SetValues()
 			Options.SaveManager_ConfigList:SetValue(nil)

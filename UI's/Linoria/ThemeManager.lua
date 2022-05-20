@@ -15,7 +15,7 @@ local ThemeManager = {} do
 		['Mint'] 			= { 8, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"242424","AccentColor":"3db488","BackgroundColor":"1c1c1c","OutlineColor":"373737"}') },
 		['Tokyo Night'] 	= { 9, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
 		['Ubuntu'] 			= { 10, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"3e3e3e","AccentColor":"e2581e","BackgroundColor":"323232","OutlineColor":"191919"}') },
-	        ["FluxHub"]             = { 11, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1a1a1a","AccentColor":"674e74","BackgroundColor":"141414","OutlineColor":"433e44"}') }
+		["FluxHub"]         = { 11, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1a1a1a","AccentColor":"674e74","BackgroundColor":"141414","OutlineColor":"433e44"}') }
 	}
 
 	function ThemeManager:ApplyTheme(theme)
@@ -234,8 +234,10 @@ local ThemeManager = {} do
 
 	function ThemeManager:CreateGroupBox(tab)
 		assert(self.Library, 'must set ThemeManager.Library first!')
-		tab:AddLeftGroupbox('themes')
-		tab:AddDivider()
+		local groupbox = tab:AddLeftGroupbox('themes')
+		groupbox:AddDivider()
+		
+		return groupbox
 	end
 
 	function ThemeManager:ApplyToTab(tab)

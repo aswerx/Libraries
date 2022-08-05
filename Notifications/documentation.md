@@ -44,7 +44,7 @@ local notifications = notificationLibrary.new({
 ---
 
 ```lua
-notificationLibrary:BuildNotificationUI()
+notifications:BuildNotificationUI()
 ```
 
 This function will build the UI elements for the module to work correctly
@@ -52,7 +52,7 @@ This function will build the UI elements for the module to work correctly
 --- 
 
 ```lua
-notificationLibrary:Notify(text: string)
+notifications:Notify(text: string)
 ```
 
 This function will, as it says, notify you of whatever text you put as the first parameter
@@ -60,7 +60,7 @@ This function will, as it says, notify you of whatever text you put as the first
 ---
 
 ```lua
-notificationLibrary:SetNotificationLifetime(lifetime: number)
+notifications:SetNotificationLifetime(lifetime: number)
 ```
 
 This function will set the lifetime of the notifications before it disapears 
@@ -68,7 +68,7 @@ This function will set the lifetime of the notifications before it disapears
 ---
 
 ```lua
-notificationLibrary:SetTextColor(textColor: Color3)
+notifications:SetTextColor(textColor: Color3)
 ```
 
 This function will set the the text color of all notifications
@@ -76,7 +76,7 @@ This function will set the the text color of all notifications
 ---
 
 ```lua
-notificationLibrary:SetTextSize(textSize: number)
+notifications:SetTextSize(textSize: number)
 ```
 
 This function will set the text size of all notifications
@@ -84,7 +84,7 @@ This function will set the text size of all notifications
 ---
 
 ```lua
-notificationLibrary:SetTextStrokeTransparency(textStrokeTransparency: number)
+notifications:SetTextStrokeTransparency(textStrokeTransparency: number)
 ```
 
 This function will set the outline transparency all of notifications
@@ -92,7 +92,7 @@ This function will set the outline transparency all of notifications
 ---
 
 ```lua
-notificationLibrary:SetTextStrokeColor(textStrokeColor: Color3)
+notifications:SetTextStrokeColor(textStrokeColor: Color3)
 ```
 
 This function will set the outline color of all notifications

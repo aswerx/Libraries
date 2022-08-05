@@ -104,3 +104,23 @@ notifications:SetTextFont(textFont: string <font string>)
 ```
 
 This function will set the text font of all notifications
+
+---
+
+# Full example
+```lua
+local notificationLibrary = notifications.new({            
+    NotificationLifetime = 3, 
+    NotificationPosition = "Middle",
+    
+    TextFont = Enum.Font.Code,
+    TextColor = Color3.fromRGB(255, 255, 255),
+    TextSize = 15,
+    
+    TextStrokeTransparency = 0, 
+    TextStrokeColor = fromRGB(0, 0, 0),
+})
+
+notificationLibrary:BuildNotificationUI();
+notificationLibrary:Notify("hello, world!");
+```

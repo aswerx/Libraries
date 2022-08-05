@@ -119,8 +119,8 @@ local notifications = notificationLibrary.new({
     TextSize = 15,
     
     TextStrokeTransparency = 0, 
-    TextStrokeColor = fromRGB(0, 0, 0)
-})
+    TextStrokeColor = Color3.fromRGB(0, 0, 0)
+});
 
 notifications:BuildNotificationUI();
 notifications:Notify("hello, world!");

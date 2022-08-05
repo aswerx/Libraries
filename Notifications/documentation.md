@@ -22,8 +22,15 @@ This function creates a new module with the specified **settings** in the **sett
 Example:
 ```lua
 local notifications = notificationLibrary.new({            
-    NotificationLifetime = 3, 
-    NotificationPosition = "Middle",
+    NotificationLifetime = 3, -- how long your notifications will last
+    NotificationPosition = "Middle", the Position where your notifications will be
+    
+    --[[ 
+         all notification positions:
+                
+         Middle, MiddleRight, MiddleLeft
+         Top, TopRight, TopLeft
+    ]]--
     
     TextFont = Enum.Font.Code,
     TextColor = Color3.fromRGB(255, 255, 255),

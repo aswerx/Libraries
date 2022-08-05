@@ -109,7 +109,8 @@ This function will set the text font of all notifications
 
 # Full example
 ```lua
-local notificationLibrary = notifications.new({            
+local notificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Libraries/main/Notifications/source.lua"))();
+local notifications = notificationLibrary.new({            
     NotificationLifetime = 3, 
     NotificationPosition = "Middle",
     
@@ -118,9 +119,9 @@ local notificationLibrary = notifications.new({
     TextSize = 15,
     
     TextStrokeTransparency = 0, 
-    TextStrokeColor = fromRGB(0, 0, 0),
+    TextStrokeColor = fromRGB(0, 0, 0)
 })
 
-notificationLibrary:BuildNotificationUI();
-notificationLibrary:Notify("hello, world!");
+notifications:BuildNotificationUI();
+notifications:Notify("hello, world!");
 ```

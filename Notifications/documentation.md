@@ -13,6 +13,8 @@ Great, now you can start using the library
 
 ---
 
+##notificationLibrary.new
+
 ```lua
 function notificationLibrary.new(settings: table)
 ```

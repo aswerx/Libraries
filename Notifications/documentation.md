@@ -13,16 +13,13 @@ Great, now you can start using the library
 
 ---
 
-## notificationLibrary.new
-
 ```lua
 function notificationLibrary.new(settings: table)
 ```
 
-Creates a new notification library with the specified **settings** in the **settings table**
+This function creates a new notification library with the specified **settings** in the **settings table**
 
 Example:
-
 ```lua
 local notifications = notificationLibrary.new({            
     NotificationLifetime = 3, 

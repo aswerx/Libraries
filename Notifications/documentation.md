@@ -40,3 +40,67 @@ local notifications = notificationLibrary.new({
     TextStrokeColor = fromRGB(0, 0, 0), -- the color of the outline effect on a notifications text
 })
 ```
+
+---
+
+```lua
+notificationLibrary:BuildNotificationUI()
+```
+
+This function will build the UI elements for the module to work correctly
+
+--- 
+
+```lua
+notificationLibrary:Notify(text: string)
+```
+
+This function will, as it says, notify you of whatever text you put as the first parameter
+
+---
+
+```lua
+notifications:SetNotificationLifetime(lifetime: number)
+```
+
+This function will set the lifetime of the notifications before it disapears 
+
+---
+
+```lua
+notifications:SetTextColor(textColor: Color3)
+```
+
+This function will set the the text color of all notifications
+
+---
+
+```lua
+notifications:SetTextSize(textSize: number)
+```
+
+This function will set the text size of all notifications
+
+---
+
+```lua
+notifications:SetTextStrokeTransparency(textStrokeTransparency: number)
+```
+
+This function will set the outline transparency all of notifications
+
+---
+
+```lua
+notifications:SetTextStrokeColor(textStrokeColor: Color3)
+```
+
+This function will set the outline color of all notifications
+
+---
+
+```lua
+notifications:SetTextFont(textFont: string <font string>)
+```
+
+This function will set the text font of all notifications

@@ -18,6 +18,7 @@ function notificationLibrary.new(settings: table)
 ```
 
 Creates a new notification library with the specified **settings** in the **settings table**
+
 Example:
 
 ```lua

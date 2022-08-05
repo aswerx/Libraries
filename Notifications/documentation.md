@@ -60,7 +60,7 @@ This function will, as it says, notify you of whatever text you put as the first
 ---
 
 ```lua
-notifications:SetNotificationLifetime(lifetime: number)
+notificationLibrary:SetNotificationLifetime(lifetime: number)
 ```
 
 This function will set the lifetime of the notifications before it disapears 
@@ -68,7 +68,7 @@ This function will set the lifetime of the notifications before it disapears
 ---
 
 ```lua
-notifications:SetTextColor(textColor: Color3)
+notificationLibrary:SetTextColor(textColor: Color3)
 ```
 
 This function will set the the text color of all notifications
@@ -76,7 +76,7 @@ This function will set the the text color of all notifications
 ---
 
 ```lua
-notifications:SetTextSize(textSize: number)
+notificationLibrary:SetTextSize(textSize: number)
 ```
 
 This function will set the text size of all notifications
@@ -84,7 +84,7 @@ This function will set the text size of all notifications
 ---
 
 ```lua
-notifications:SetTextStrokeTransparency(textStrokeTransparency: number)
+notificationLibrary:SetTextStrokeTransparency(textStrokeTransparency: number)
 ```
 
 This function will set the outline transparency all of notifications
@@ -92,7 +92,7 @@ This function will set the outline transparency all of notifications
 ---
 
 ```lua
-notifications:SetTextStrokeColor(textStrokeColor: Color3)
+notificationLibrary:SetTextStrokeColor(textStrokeColor: Color3)
 ```
 
 This function will set the outline color of all notifications

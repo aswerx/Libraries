@@ -17,7 +17,7 @@ Great, now you can start using the library
 function notificationLibrary.new(settings: table)
 ```
 
-This function creates a new notification library with the specified **settings** in the **settings table**
+This function creates a new module with the specified **settings** in the **settings table**
 
 Example:
 ```lua

@@ -14,7 +14,7 @@ Great, now you can start using the library
 ---
 
 ```lua
-function notificationLibrary.new(settings: table)
+notificationLibrary.new(settings: table)
 ```
 
 This function creates a new module with the specified **settings** in the **settings table**

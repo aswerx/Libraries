@@ -25,7 +25,7 @@ function protectScreenGui(screenGui)
     elseif gethui then 
         screenGui.Parent = gethui();
     else 
-        screenGui.Parent = coreGui();
+        screenGui.Parent = coreGui;
     end
 end
 
